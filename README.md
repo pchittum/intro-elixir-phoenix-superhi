@@ -1,6 +1,6 @@
 # Slick
 
-Messaging app from Rik's Elixir Basics class from Superhi. 
+Messaging app from Rik's Elixir Basics class from Superhi.
 
 To start your Phoenix app:
 
@@ -12,6 +12,12 @@ To start your Phoenix app:
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+
+## Notes
+
+Config of prod environment through heroku using env variables.
+Replicate env variables across the pipeline
+
 
 ## Learn more
 
