@@ -1,0 +1,29 @@
+<h2>Show room</h2>
+
+<ul>
+
+  <li>
+    <strong>Room Title:</strong>
+    <%= @room.title %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @room.description %>
+  </li>
+
+</ul>
+
+<div class="messages">
+
+  <%= for message <- @messages do %>
+    <p><%= message.body %></p>
+  <%= end %>
+
+</div>
+
+<div>
+<textarea class="chat-input" data-room-id="<%= @room.id %>"></textarea>
+</div>
+<%= link "Edit", to: room_path(@conn, :edit, @room) %>&nbsp;
+<%= link "Back", to: room_path(@conn, :index) %>

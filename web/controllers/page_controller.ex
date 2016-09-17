@@ -1,0 +1,7 @@
+defmodule Slick.PageController do
+  use Slick.Web, :controller
+
+  def index(conn, _params) do
+    render conn, "index.html"
+  end
+end
