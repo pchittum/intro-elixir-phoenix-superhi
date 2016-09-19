@@ -20,6 +20,19 @@ Replicate env variables across the pipeline
 
 Deploy Failure:
 
+- I was receiving an error causing failure to Deploy
+- error was reported as problem with `System.get_env(SECRET_KEY_BASE)`
+- My fault...string...the env var is passed in as String such as: `System.get_env("SECRET_KEY_BASE")`
+- Here was the error as reported during deploy:
+
+    remote: -----> Fetching app dependencies with mix
+    remote: ** (Mix.Config.LoadError) could not load config config/prod.secret.exs
+    remote:     ** (FunctionClauseError) no function clause matching in System.get_env/1
+    remote:     (elixir) lib/system.ex:267: System.get_env(SECRET_KEY_BASE)
+
+Ecto.migrate failure:
+
+- 
 
 ## Learn more
 
