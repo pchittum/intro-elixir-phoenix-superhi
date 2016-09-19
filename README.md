@@ -43,7 +43,8 @@ Replicate env variables across the pipeline
 ###WebSocket failure
 
 - In local dev, localhost is the url. In heroku, there is an actual URL. There is some origin check on wss connection that fails.
-- Adding config to `config/prod.exs` under `My_App.Endpoint` as `check_origin: ["https://elixir-app*.herokuapp.com"]`
+- Adding config to `config/prod.exs` under `My_App.Endpoint` as `check_origin: ["https://elixir-app*.herokuapp.com"]`. **This Failed**
+- Added config url as heroku app URL. **This Failed**
 - Here are the errors:  
 
     CLIENT ERROR in browser

@@ -13,6 +13,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :slick, Slick.Endpoint,
   http: [port: {:system, "PORT"}],
+  https: [port: {:system, "PORT"}],
   url: [host: "https://elixir-app-dev.herokuapp.com", port: 80],
   cache_static_manifest: "priv/static/manifest.json",
   check_origin: ["https://elixir-app*.herokuapp.com"]
