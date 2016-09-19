@@ -18,6 +18,8 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 Config of prod environment through heroku using env variables.
 Replicate env variables across the pipeline
 
+Deploy Failure:
+
 
 ## Learn more
 
