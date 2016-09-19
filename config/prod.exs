@@ -14,7 +14,8 @@ use Mix.Config
 config :slick, Slick.Endpoint,
   http: [port: {:system, "PORT"}],
   url: [host: "example.com", port: 80],
-  cache_static_manifest: "priv/static/manifest.json"
+  cache_static_manifest: "priv/static/manifest.json",
+  check_origin: ["elixir-app*"]
 
 # Do not print debug messages in production
 config :logger, level: :info

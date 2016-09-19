@@ -10,7 +10,7 @@ defmodule Slick.RoomChannel do
     #first is the name of the channel
     #second is any extra information about the channel
     #third is the websocket itself
-  def join("rooms:" <> _room_id, payload, socket) do
+  def join("rooms:" <> _room_id, _payload, socket) do
 
     #if implementing this as a longpolling client, here is where I would make the
     #long poll client ID and retrieve the orgs and channels
